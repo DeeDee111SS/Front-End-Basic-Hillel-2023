@@ -1,0 +1,13 @@
+.site-scroll-btn {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    padding: 12px 9px;
+    &:hover {
+        border-color: rgba(240, 20, 90, 0.5);
+        & path {
+            stroke: rgba(240, 20, 90, 0.5);
+        }
+    }
+}

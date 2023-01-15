@@ -1,0 +1,47 @@
+.first-division {
+    background: url(../img/symbol-main.svg) no-repeat center top,
+        $colorGradientSupersoft;
+    background-size: 523px 600px, cover;
+    position: relative;
+    border-radius: 0 0 12px 12px;
+    &::after {
+        content: "";
+        height: 10px;
+        position: absolute;
+        background-color: #cacadb;
+        bottom: -10px;
+        left: 20px;
+        right: 20px;
+        border-radius: 0 0 12px 12px;
+    }
+    &::before {
+        content: "";
+        height: 20px;
+        position: absolute;
+        background-color: #e7e7f2;
+        bottom: -20px;
+        left: 40px;
+        right: 40px;
+        border-radius: 0 0 12px 12px;
+    }
+}
+
+@media (min-width: 768px) {
+    .first-division {
+        background-size: 893px 1024px, cover;
+    }
+}
+
+@media (min-width: 992px) {
+    .first-division {
+        background-size: 670px 768px, cover;
+    }
+}
+
+@media (min-width: 1201px) {
+    .first-division {
+        background-size: 697px 799px, cover;
+    }
+}
+
+// after - 1401px - it's for Clients

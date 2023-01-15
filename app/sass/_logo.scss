@@ -1,0 +1,12 @@
+.logo {
+    // &--white path:not(.red)) {
+    //     fill: white;
+    // }
+}
+
+@media (min-width: 768px) {
+    .logo {
+        width: 130px;
+        height: 60px;
+    }
+}

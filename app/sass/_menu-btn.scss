@@ -1,0 +1,29 @@
+.menu-btn {
+    background-image: url(../img/menu-hamburger.svg);
+    background-color: #ffffff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    border: 0;
+    border-radius: 8px;
+    margin: 13px 0;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $colorGreySeparator;
+    }
+    &--white {
+        background-image: url(../img/menu-hamburger-white.svg);
+        background-color: transparent;
+        &:hover {
+            background-color: #b3b3ba;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .menu-btn {
+        display: none;
+    }
+}

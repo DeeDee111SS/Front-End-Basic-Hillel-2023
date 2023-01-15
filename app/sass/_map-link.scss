@@ -1,0 +1,28 @@
+.map-link {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $colorActiveRegular;
+    display: block;
+
+    &:hover {
+        color: $colorAccent;
+    }
+}
+
+@media (min-width: 768px) {
+    .map-link {
+        display: flex;
+        align-items: center;
+        &::before {
+            content: "";
+            width: 6px;
+            height: 6px;
+            background-color: $colorGreyText;
+            border-radius: 50%;
+            margin: 0 6px;
+        }
+    }
+}

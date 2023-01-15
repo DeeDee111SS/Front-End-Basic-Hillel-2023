@@ -1,0 +1,10 @@
+.footer-mail {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: $colorActiveRegular;
+
+    &:hover {
+        color: $colorAccent;
+    }
+}

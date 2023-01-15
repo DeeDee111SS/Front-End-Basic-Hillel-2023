@@ -1,0 +1,30 @@
+.breadcrumbs {
+    display: inline-flex;
+    align-items: center;
+    font-size: 20px;
+    line-height: 24px;
+    color: #323264;
+
+    &::before {
+        content: "";
+        background-image: url(../img/slash.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 12px;
+        height: 26px; /*problem was here, maybe img-responsive?*/
+        padding: 0 4px;
+    }
+}
+
+@media (min-width: 768px) {
+    .breadcrumbs {
+        font-size: 36px;
+        line-height: 44px;
+
+        &::before {
+            width: 21px;
+            height: 47px;
+            background-size: 21px 47px;
+        }
+    }
+}

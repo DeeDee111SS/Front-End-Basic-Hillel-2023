@@ -1,0 +1,26 @@
+.arrow-link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $colorActiveRegular;
+    &::after {
+        display: inline-block;
+        content: "";
+        width: 6px;
+        height: 10px;
+        background-image: url(../img/link-arrow.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin: 0 6px;
+    }
+    &:hover {
+        &::after {
+            margin: 0 12px;
+        }
+    }
+    &.active {
+        color: $colorAccent;
+    }
+}

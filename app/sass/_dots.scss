@@ -1,0 +1,31 @@
+.dots {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0;
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    right: 0;
+    &--about {
+        bottom: -48px;
+    }
+    &-item {
+        padding: 0 7px;
+        &.active .dots-btn {
+            background-color: $colorActiveRegular;
+        }
+        &:hover .dots-btn {
+            background-color: rgba(36, 163, 255, 0.6);
+        }
+    }
+    &-btn {
+        cursor: pointer;
+        border: none;
+        font-size: 0;
+        width: 16px;
+        height: 16px;
+        border-radius: 8px;
+        background-color: rgba(36, 163, 255, 0.3);
+    }
+}

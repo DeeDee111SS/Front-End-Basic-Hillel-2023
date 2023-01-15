@@ -1,0 +1,35 @@
+.phone {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    color: $colorGreyText;
+    &--footer {
+        &::after,
+        &::before {
+            display: none;
+            content: "";
+            width: 6px;
+            height: 6px;
+            background-color: $colorGreyText;
+            border-radius: 50%;
+            margin: 0 6px;
+        }
+    }
+    &--white {
+        color: #ffffff;
+    }
+}
+
+@media (min-width: 768px) {
+    .phone {
+        &--footer {
+            &::after,
+            &::before {
+                display: inline-block;
+            }
+        }
+    }
+}

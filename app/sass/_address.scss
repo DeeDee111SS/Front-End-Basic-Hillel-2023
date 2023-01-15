@@ -1,0 +1,33 @@
+.address {
+    display: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    color: $colorGreyText;
+
+    &--footer {
+        display: inline-flex;
+        align-items: center;
+        &::after,
+        &::before {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .address {
+        display: inline-flex;
+        align-items: center;
+        &::after,
+        &::before {
+            content: "";
+            width: 6px;
+            height: 6px;
+            background-color: $colorGreySeparator;
+            border-radius: 50%;
+            margin: 0 6px;
+        }
+    }
+}

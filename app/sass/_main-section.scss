@@ -1,0 +1,25 @@
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+
+    &__h1 {
+        max-width: 200px;
+        margin: 0 auto;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        text-align: center;
+        color: #ffffff;
+        padding: 100px 0 160px;
+    }
+}
+
+@media (min-width: 768px) {
+    .main-section {
+        &__h1 {
+            padding: 210px 0 417px;
+        }
+    }
+}

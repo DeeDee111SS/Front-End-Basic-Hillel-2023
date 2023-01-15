@@ -1,0 +1,91 @@
+.about-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 30px;
+    &__title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        background: $colorGradientRedText;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        padding-bottom: 30px;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 30px;
+        color: #000000;
+        padding-bottom: 30px;
+    }
+    &__advantages {
+        padding-left: 30px;
+        border-left: 4px solid $colorGreySeparator;
+    }
+    &__digits {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        background: $colorGradientRedText;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+        &::before {
+            content: "";
+            background-repeat: no-repeat;
+            background-position: center center;
+            width: 27px;
+            height: 27px;
+            margin-right: 13px;
+        }
+        &--n1::before {
+            background-image: url("../img/advantages-1.svg");
+        }
+        &--n2::before {
+            background-image: url("../img/advantages-2.svg");
+        }
+        &--n3::before {
+            background-image: url("../img/advantages-3.svg");
+        }
+    }
+    &__definition {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: $colorMainRegular;
+        &:not(:last-child) {
+            padding-bottom: 40px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .about-intro {
+        padding-bottom: 60px;
+        &__title {
+            font-size: 38px;
+            line-height: 46px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .about-intro {
+        display: grid;
+        grid-template-columns: 1fr 354px;
+        grid-template-rows: min-content min-content;
+        &__introduction {
+            padding-right: 30px;
+        }
+        &__text:last-child {
+            padding-bottom: 0;
+        }
+    }
+}

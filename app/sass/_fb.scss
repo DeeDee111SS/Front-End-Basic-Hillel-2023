@@ -1,0 +1,36 @@
+.fb {
+    display: none;
+    &--footer {
+        display: block;
+        width: 38px;
+        height: 38px;
+        & path {
+            fill: $colorActiveRegular;
+        }
+        &:hover path {
+            fill: $colorAccent;
+        }
+        &::before {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .fb {
+        display: inline-flex;
+        align-items: center;
+        &::before {
+            content: "";
+            width: 6px;
+            height: 6px;
+            background-color: $colorGreySeparator;
+            border-radius: 50%;
+            margin: 0 6px;
+        }
+
+        &:hover path {
+            fill: $colorAccent;
+        }
+    }
+}
