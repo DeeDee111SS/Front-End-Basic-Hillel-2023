@@ -6,7 +6,10 @@
     line-height: 20px;
     text-align: right;
     color: $colorGreyText;
+
     &--footer {
+        color: $colorMainAlt;
+
         &::after,
         &::before {
             display: none;
@@ -18,8 +21,9 @@
             margin: 0 6px;
         }
     }
+    
     &--white {
-        color: #ffffff;
+        color: $colorBasicWhite;
     }
 }
 

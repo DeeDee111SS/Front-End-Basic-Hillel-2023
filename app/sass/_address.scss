@@ -9,6 +9,7 @@
     &--footer {
         display: inline-flex;
         align-items: center;
+
         &::after,
         &::before {
             display: none;
@@ -20,6 +21,7 @@
     .address {
         display: inline-flex;
         align-items: center;
+        
         &::after,
         &::before {
             content: "";

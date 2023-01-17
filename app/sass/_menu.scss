@@ -1,8 +1,58 @@
 .menu {
+    &__mobile-list {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 15px 0;
+        list-style: none;
+        width: 100%;
+        right: 0;
+        left: 0;
+        background-color: transparent;
+        position: absolute;
+        display: none; // WIP
+
+        &-item {
+            width: 100%;
+            display: flex;
+
+            &:not(:last-child) {
+                padding-bottom: 15px;
+            }
+
+            .menu__mobile-link {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 29px;
+                text-align: center;
+                color: $colorActiveRegular;
+                width: 100%;
+                padding: 7px 0px;
+                background-color: $colorGreyBg;
+                border-radius: 12px;  
+                transition-duration: 300ms;
+                transition-property: background-color;
+
+                &:hover {
+                    background-color: $colorGreySeparator;
+                }
+
+                &.active {
+                    color: $colorAccent;
+                }    
+            }
+        }
+
+        &.menu__mobile-list--white {
+            background-color: $colorBasicWhite;
+        }
+    }
+    
     &__list {
         display: none;
     }
 }
+
 
 @media (min-width: 768px) {
     .menu {
@@ -13,7 +63,7 @@
             margin-top: 30px;
 
             &-item {
-                .menu-link {
+                .menu__link {
                     font-weight: 700;
                     font-size: 16px;
                     line-height: 20px;
@@ -21,15 +71,25 @@
                     color: $colorActiveRegular;
                     padding-bottom: 3px;
                     border-bottom: 2px solid transparent;
+                    transition-duration: 300ms;
+                    transition-property: border-bottom-color;
 
-                    &:hover {
+                    &.active {
+                        color: $colorAccent;
+                        border-bottom-color: $colorAccent;
+                    }
+
+                    &:not(.active):hover {
                         border-bottom-color: $colorActiveRegular;
                     }
 
-                    &--white {
-                        color: #ffffff;
+                    &.menu__link--white {
+                        color: $colorBasicWhite;
+                        transition-duration: 300ms;
+                        transition-property: border-bottom-color;
+
                         &:hover {
-                            border-bottom-color: #ffffff;
+                            border-bottom-color: $colorBasicWhite;
                         }
                     }
                 }
@@ -45,6 +105,7 @@
 @media (min-width: 992px) {
     .menu {
         justify-self: end;
+
         &__list {
             margin-top: 16px;
         }

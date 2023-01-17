@@ -2,29 +2,38 @@
     display: flex;
     padding-left: 0;
     list-style: none;
-    &__a {
+
+    &__link {
         font-weight: 700;
         font-size: 12px;
         line-height: 15px;
         letter-spacing: 1px;
-        color: #b3b3ba;
+        color: $colorGreyText;
         padding: 5px 7px;
         border-radius: 6px;
         text-transform: uppercase;
         text-decoration: none;
         display: block;
-        &:hover {
-            background-color: #f5f5fa;
+        transition-duration: 300ms;
+        transition-property: background-color;
+
+        &:not(.active):hover {
+            background-color: $colorGreyBg;
         }
+        
         &.active {
-            color: #ffffff;
-            background-color: #f0145a;
+            color: $colorBasicWhite;
+            background-color: $colorAccent;
         }
     }
-    &__a--white {
-        color: #ffffff;
-        &:hover {
-            background-color: #b3b3ba;
+
+    &__link--white {
+        color: $colorBasicWhite;
+        transition-duration: 300ms;
+        transition-property: background-color;
+
+        &:not(.active):hover {
+            background-color: $colorGreyText; // rgba(255, 255, 255, 0.2); or #b3b3ba-$colorGreyText
         }
     }
 }

@@ -11,7 +11,7 @@
         align-items: center;
         padding-bottom: 21px;
     }
-
+    
     &__second-line {
         display: flex;
         flex-direction: column;
@@ -29,6 +29,7 @@
         justify-items: left;
         max-width: 398px;
         margin: 0 auto;
+
         &__top-line {
             flex-direction: row;
             align-items: center;

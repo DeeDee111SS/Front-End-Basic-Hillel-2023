@@ -1,15 +1,21 @@
 .fb {
     display: none;
+
     &--footer {
         display: block;
         width: 38px;
         height: 38px;
+
         & path {
             fill: $colorActiveRegular;
         }
+
         &:hover path {
+            transition-duration: 300ms;
+            transition-property: fill;
             fill: $colorAccent;
         }
+        
         &::before {
             display: none;
         }
@@ -20,6 +26,7 @@
     .fb {
         display: inline-flex;
         align-items: center;
+
         &::before {
             content: "";
             width: 6px;
@@ -30,6 +37,8 @@
         }
 
         &:hover path {
+            transition-duration: 300ms;
+            transition-property: fill;
             fill: $colorAccent;
         }
     }

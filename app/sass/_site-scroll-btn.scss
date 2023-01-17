@@ -4,9 +4,15 @@
     border-radius: 50%;
     border: 2px solid rgba(255, 255, 255, 0.5);
     padding: 12px 9px;
+    transition-duration: 300ms;
+    transition-property: border-color;
+
     &:hover {
         border-color: rgba(240, 20, 90, 0.5);
+
         & path {
+            transition-duration: 300ms;
+            transition-property: stroke;
             stroke: rgba(240, 20, 90, 0.5);
         }
     }

@@ -7,19 +7,26 @@
     bottom: -60px;
     left: 0;
     right: 0;
+
     &--about {
         bottom: -48px;
     }
-    &-item {
+    
+    &__item {
         padding: 0 7px;
-        &.active .dots-btn {
+        
+        &.active .dots__btn {
             background-color: $colorActiveRegular;
         }
-        &:hover .dots-btn {
+
+        &:not(.active):hover .dots__btn {
+            transition-duration: 300ms;
+            transition-property: background-color;
             background-color: rgba(36, 163, 255, 0.6);
         }
     }
-    &-btn {
+
+    &__btn {
         cursor: pointer;
         border: none;
         font-size: 0;

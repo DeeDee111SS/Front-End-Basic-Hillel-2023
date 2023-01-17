@@ -2,6 +2,7 @@
     padding-top: 60px;
     display: flex;
     flex-direction: column;
+
     &__title {
         align-self: center;
         font-weight: 700;
@@ -12,11 +13,13 @@
         color: $colorMainRegular;
         padding-bottom: 30px;
     }
+    
     &__container {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, min-content);
     }
+
     &__item {
         width: 100%;
         height: 120px;
@@ -31,6 +34,7 @@
                 height: 48px;
             }
         }
+
         &--n2 {
             background-color: #143646;
             .clients__logo {
@@ -38,6 +42,7 @@
                 height: 32px;
             }
         }
+
         &--n3 {
             background-color: #f48b30;
             .clients__logo {
@@ -45,6 +50,7 @@
                 height: 44px;
             }
         }
+
         &--n4 {
             background-color: #9e4dc3;
             .clients__logo {
@@ -52,13 +58,16 @@
                 height: 42px;
             }
         }
+
         &--n5 {
             background-color: #fd9339;
+
             .clients__logo {
                 width: 174px;
                 height: 44px;
             }
         }
+
         &--n6 {
             background-color: #e2e2e4;
             .clients__logo {
@@ -66,6 +75,7 @@
                 height: 48px;
             }
         }
+
         &--n7,
         &--n8,
         &--n9,
@@ -82,6 +92,7 @@
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(4, min-content);
         }
+
         &__item {
             &--n7,
             &--n8,
@@ -99,6 +110,7 @@
                     height: 61px;
                 }
             }
+
             &--n8 {
                 background-color: #dcf3f9;
                 .clients__logo {
@@ -106,6 +118,7 @@
                     height: 76px;
                 }
             }
+
             &--n9 {
                 background-color: #eaeaea;
                 .clients__logo {
@@ -113,6 +126,7 @@
                     height: 60px;
                 }
             }
+
             &--n10 {
                 background-color: #282240;
                 .clients__logo {
@@ -120,6 +134,7 @@
                     height: 38px;
                 }
             }
+
             &--n11 {
                 background-color: #1d4568;
                 .clients__logo {
@@ -127,6 +142,7 @@
                     height: 46px;
                 }
             }
+
             &--n12 {
                 background-color: #000000;
                 .clients__logo {
@@ -135,5 +151,34 @@
                 }
             }
         }
+    }
+}
+
+@media (min-width: 1401px) {
+    .clients {
+        margin-bottom: 60px;
+        
+        &__container {
+            border-radius: 12px;
+        }
+
+        &__item {
+                &--n1 {
+                    border-radius: 12px 0 0;
+                }
+
+                &--n3 {
+                    border-radius: 0 12px 0;
+                }
+
+                &--n10 {
+                    border-radius: 0 0 0 12px;
+                }
+
+                &--n12 {
+                    border-radius: 0 0 12px;
+                }
+        }
+        
     }
 }

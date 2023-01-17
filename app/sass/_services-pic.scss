@@ -1,25 +1,31 @@
 .services-pic {
     width: 92px;
     height: 92px;
-    background-color: #ffffff;
+    background-color: $colorBasicWhite;
     border-radius: 24px;
     background-repeat: no-repeat;
     background-position: center center;
+
     &--pic1 {
         background-image: url(../img/services-ecommerce.svg);
     }
+
     &--pic2 {
         background-image: url(../img/services-support.svg);
     }
+
     &--pic3 {
         background-image: url(../img/services-coprorate.svg);
     }
+
     &--pic4 {
         background-image: url(../img/services-trust.svg);
     }
+
     &--pic5 {
         background-image: url(../img/services-protection.svg);
     }
+    
     &--pic6 {
         background-image: url(../img/services-court.svg);
     }

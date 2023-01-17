@@ -12,9 +12,9 @@
         <header class="header">
             <div class="header__top-line">
                 <ul class="lang">
-                    <li><a class="lang__a" href="#">ua</a></li>
-                    <li><a class="lang__a" href="#">pl</a></li>
-                    <li><a class="lang__a active" href="#">en</a></li>
+                    <li><a class="lang__link" href="#">ua</a></li>
+                    <li><a class="lang__link" href="#">pl</a></li>
+                    <li><a class="lang__link active" href="#">en</a></li>
                 </ul>
                 <div class="address">Kyiv, Mechnikova str., 14/1</div>
                 <a class="phone" href="tel:">0800 211 927</a>
@@ -27,19 +27,26 @@
                 </a>
             </div>
             <div class="header__logo-box">
-                <a class="logo" href="../index.html">
+                <a class="logo-link" href="../index.html">
                     <img class="logo img-responsive" src="../img/logo.svg" alt="">
                 </a>
                 <div class="breadcrumbs">about us</div>
             </div>
             <nav class="menu">
                 <button class="menu-btn" type="button"></button>
+                <ul class="menu__mobile-list menu__mobile-list--white">
+                    <li class="menu__mobile-list-item"><a class="menu__mobile-link active" href="pages/about.html">about us</a></li>
+                    <li class="menu__mobile-list-item"><a class="menu__mobile-link" href="#">services</a></li>
+                    <li class="menu__mobile-list-item"><a class="menu__mobile-link" href="#">team</a></li>
+                    <li class="menu__mobile-list-item"><a class="menu__mobile-link" href="#">publications</a></li>
+                    <li class="menu__mobile-list-item"><a class="menu__mobile-link" href="#">contact</a></li>
+                </ul>
                 <ul class="menu__list">
-                    <li class="menu__list-item"><a class="menu-link" href="../pages/about.html">about us</a></li>
-                    <li class="menu__list-item"><a class="menu-link" href="#">services</a></li>
-                    <li class="menu__list-item"><a class="menu-link" href="#">team</a></li>
-                    <li class="menu__list-item"><a class="menu-link" href="#">publications</a></li>
-                    <li class="menu__list-item"><a class="menu-link" href="#">contact</a></li>
+                    <li class="menu__list-item"><a class="menu__link active" href="../pages/about.html">about us</a></li>
+                    <li class="menu__list-item"><a class="menu__link" href="#">services</a></li>
+                    <li class="menu__list-item"><a class="menu__link" href="#">team</a></li>
+                    <li class="menu__list-item"><a class="menu__link" href="#">publications</a></li>
+                    <li class="menu__list-item"><a class="menu__link" href="#">contact</a></li>
                 </ul>
             </nav>
         </header>   
@@ -71,11 +78,11 @@
         </div>
 
         <div class="team-cover">
-            <picture>
+            <picture class="team-cover__pic">
                 <source media="(min-width: 1201px)" srcset="../img/about-team-4.png 1x, ../img/about-team-4@2x.png 2x">
                 <source media="(min-width: 992px)" srcset="../img/about-team-3.png 1x, ../img/about-team-3@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="../img/about-team-2.png 1x, ../img/about-team-2@2x.png 2x">
-                <img class="team-cover__pic img-responsive" src="../img/about-team-1.png" srcset="../img/about-team-1@2x.png" alt="team">
+                <img class="img-responsive" src="../img/about-team-1.png" srcset="../img/about-team-1@2x.png" alt="team">
             </picture>
             <p class="team-cover__text">team</p>
         </div>
@@ -104,26 +111,26 @@
             <div class="container container--pb-adapt">
                 <div class="achievements__container">
                     <h2 class="achievements__title">achievements</h2>
-                    <div class="slider-achiv">
-                        <div class="slider-achiv-item">
-                            <img class="slider-achiv-item__pic" src="../img/achievment-1.png" alt="">
+                    <div class="achievements__slider">
+                        <div class="achievements__slider-item">
+                            <img class="achievements__slider-pic" src="../img/achievment-1.png" alt="">
                         </div>
-                        <div class="slider-achiv-item">
-                            <img class="slider-achiv-item__pic" src="../img/achievment-2.png" alt="">
+                        <div class="achievements__slider-item">
+                            <img class="achievements__slider-pic" src="../img/achievment-2.png" alt="">
                         </div>
-                        <div class="slider-achiv-item">
-                            <img class="slider-achiv-item__pic" src="../img/achievment-3.png" alt="">
+                        <div class="achievements__slider-item">
+                            <img class="achievements__slider-pic" src="../img/achievment-3.png" alt="">
                         </div>
-                        <div class="slider-achiv-item">
-                            <img class="slider-achiv-item__pic" src="../img/achievment-4.png" alt="">
+                        <div class="achievements__slider-item">
+                            <img class="achievements__slider-pic" src="../img/achievment-4.png" alt="">
                         </div>
                         <ul class="dots dots--about">
-                            <li class="dots-item active"><button class="dots-btn" type="button">1</button></li>
-                            <li class="dots-item"><button class="dots-btn" type="button">2</button></li>
-                            <li class="dots-item"><button class="dots-btn" type="button">3</button></li>
-                            <li class="dots-item"><button class="dots-btn" type="button">4</button></li>
-                            <li class="dots-item"><button class="dots-btn" type="button">5</button></li>
-                            <li class="dots-item"><button class="dots-btn" type="button">6</button></li>
+                            <li class="dots__item active"><button class="dots__btn" type="button">1</button></li>
+                            <li class="dots__item"><button class="dots__btn" type="button">2</button></li>
+                            <li class="dots__item"><button class="dots__btn" type="button">3</button></li>
+                            <li class="dots__item"><button class="dots__btn" type="button">4</button></li>
+                            <li class="dots__item"><button class="dots__btn" type="button">5</button></li>
+                            <li class="dots__item"><button class="dots__btn" type="button">6</button></li>
                         </ul>
                     </div>
                 </div>

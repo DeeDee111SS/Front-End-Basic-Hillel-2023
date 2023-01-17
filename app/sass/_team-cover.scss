@@ -1,22 +1,13 @@
 .team-cover {
     width: 100%;
     position: relative;
-    // height: fit-content;
-
-    // // max-width: 100%;
-    // // height: auto;
-    // // background-image: url(../img/about-team-1.png);
-
-    //      background-image: url(../img/about-team-1.png);
-    //      background-size: cover;
-    //      object-fit: cover;
-
-    // &__pic {
-    //     // position: relative;
-    // //     max-width: 100%;
-    // //     height: auto;
-    // //     // background-image: url();
-    // }
+    background-color: $colorTeamCoverBg;
+    min-height: 100px;
+    
+    &__pic {
+        display: flex;
+    }
+    
     &__text {
         position: absolute;
         left: 7px;

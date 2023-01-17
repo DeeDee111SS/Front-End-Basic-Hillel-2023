@@ -6,6 +6,8 @@
     text-transform: uppercase;
     color: $colorActiveRegular;
     display: block;
+    transition-duration: 300ms;
+    transition-property: color;
 
     &:hover {
         color: $colorAccent;
@@ -16,6 +18,7 @@
     .map-link {
         display: flex;
         align-items: center;
+
         &::before {
             content: "";
             width: 6px;

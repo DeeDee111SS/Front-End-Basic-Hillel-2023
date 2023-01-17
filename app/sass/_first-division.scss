@@ -4,6 +4,7 @@
     background-size: 523px 600px, cover;
     position: relative;
     border-radius: 0 0 12px 12px;
+    
     &::after {
         content: "";
         height: 10px;
@@ -14,6 +15,7 @@
         right: 20px;
         border-radius: 0 0 12px 12px;
     }
+    
     &::before {
         content: "";
         height: 20px;

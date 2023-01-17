@@ -15,15 +15,18 @@
     min-width: 375px;
     margin: 0 auto;
     padding: 0 15px;
+
     &--pb-adapt {
         padding: 0 30px;
     }
-    &--clients-max {
-        max-width: 1401px;
-        padding: 0;
-    }
+
     &--mid-content {
         max-width: 1080px;
+    }
+
+    &.container--clients-max {
+        max-width: 1401px;
+        padding: 0;
     }
 }
 
@@ -53,15 +56,16 @@ a {
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 @media (min-width: 768px) {
     .container {
         padding: 0 60px;
+        
         &--pb-adapt {
             padding: 0 60px;
         }
-        // &--clients-max {
-        //     max-width: 1401px;
-        //     padding: 0;
-        // }
     }
 }

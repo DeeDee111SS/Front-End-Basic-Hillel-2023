@@ -13,12 +13,12 @@
             <header class="header">
                 <div class="header__top-line header__top-line--white">
                     <ul class="lang">
-                        <li><a class="lang__a lang__a--white" href="#">ua</a></li>
-                        <li><a class="lang__a lang__a--white" href="#">pl</a></li>
-                        <li><a class="lang__a lang__a--white active" href="#">en</a></li>
+                        <li><a class="lang__link lang__link--white" href="#">ua</a></li>
+                        <li><a class="lang__link lang__link--white" href="#">pl</a></li>
+                        <li><a class="lang__link lang__link--white active" href="#">en</a></li>
                     </ul>
                     <div class="address">Kyiv, Mechnikova str., 14/1</div>
-                    <a class="phone phone--white" href="tel:">0800 211 927</a>
+                    <a class="phone phone--white" href="tel:+380800211927">0800 211 927</a> <!--tel clarify-->
                     <a class="fb" href="#">
                         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -29,17 +29,24 @@
                 </div>
                 <div class="header__logo-box">
                     <a class="logo-link" href="#">
-                        <img class="logo img-responsive" src="img/logo-white.svg" alt=""> <!-- with class="logo" img works -->
+                        <img class="logo img-responsive" src="img/logo-white.svg" alt="logo"> <!-- with class="logo" img works -->
                     </a>
                 </div>
                 <nav class="menu">
                     <button class="menu-btn menu-btn--white" type="button"></button>
+                    <ul class="menu__mobile-list">
+                        <li class="menu__mobile-list-item"><a class="menu__mobile-link" href="pages/about.html">about us</a></li>
+                        <li class="menu__mobile-list-item"><a class="menu__mobile-link" href="#">services</a></li>
+                        <li class="menu__mobile-list-item"><a class="menu__mobile-link" href="#">team</a></li>
+                        <li class="menu__mobile-list-item"><a class="menu__mobile-link" href="#">publications</a></li>
+                        <li class="menu__mobile-list-item"><a class="menu__mobile-link" href="#">contact</a></li>
+                    </ul>
                     <ul class="menu__list">
-                        <li class="menu__list-item"><a class="menu-link menu-link--white" href="pages/about.html">about us</a></li>
-                        <li class="menu__list-item"><a class="menu-link menu-link--white" href="#">services</a></li>
-                        <li class="menu__list-item"><a class="menu-link menu-link--white" href="#">team</a></li>
-                        <li class="menu__list-item"><a class="menu-link menu-link--white" href="#">publications</a></li>
-                        <li class="menu__list-item"><a class="menu-link menu-link--white" href="#">contact</a></li>
+                        <li class="menu__list-item"><a class="menu__link menu__link--white" href="pages/about.html">about us</a></li>
+                        <li class="menu__list-item"><a class="menu__link menu__link--white" href="#">services</a></li>
+                        <li class="menu__list-item"><a class="menu__link menu__link--white" href="#">team</a></li>
+                        <li class="menu__list-item"><a class="menu__link menu__link--white" href="#">publications</a></li>
+                        <li class="menu__list-item"><a class="menu__link menu__link--white" href="#">contact</a></li>
                     </ul>
                 </nav>
             </header>
@@ -55,40 +62,41 @@
                 </a>                
             </section>
         
-            <section class="tabs" id="sect2"> <!-- Experience Section -->
-                <div class="tab-switcher">
-                    <button class="tab-switcher__button active" type="button">Consistent</button>
-                    <button class="tab-switcher__button" type="button">Customer oriented</button>
-                    <button class="tab-switcher__button" type="button">Innovative</button>
-                    <button class="tab-switcher__button" type="button">Business oriented</button>
+            <section class="tabs" id="sect2">
+                <h2 class="visually-hidden">experience</h2>
+                <div class="tabs__switcher">
+                    <button class="tabs__switcher-button active" type="button">Consistent</button>
+                    <button class="tabs__switcher-button" type="button">Customer oriented</button>
+                    <button class="tabs__switcher-button" type="button">Innovative</button>
+                    <button class="tabs__switcher-button" type="button">Business oriented</button>
                 </div>
                 <div class="tabs__content-container">
-                    <div class="tab-content active">
-                        <h3 class="tab-content__title">We turn the idea of legal services</h3>
-                        <p class="tab-content__text">Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a
+                    <div class="tabs__content active">
+                        <h3 class="tabs__content-title">We turn the idea of legal services</h3>
+                        <p class="tabs__content-text">Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a
                             number of important decisions for the industry. Many of them form the practice of applying the law of the sea in
                             Ukraine.
                         </p>
                     </div>
-                    <div class="tab-content">
-                        <h3 class="tab-content__title">We turn the idea of legal services</h3>
-                        <p class="tab-content__text">Consolidating many years of experience and practice, the company's lawyers accompany
+                    <div class="tabs__content">
+                        <h3 class="tabs__content-title">We turn the idea of legal services</h3>
+                        <p class="tabs__content-text">Consolidating many years of experience and practice, the company's lawyers accompany
                             complex projects and achieve a
                             number of important decisions for the industry. Many of them form the practice of applying the law of the sea in
                             Ukraine.
                         </p>
                     </div>
-                    <div class="tab-content">
-                        <h3 class="tab-content__title">We turn the idea of legal services</h3>
-                        <p class="tab-content__text">Consolidating many years of experience and practice, the company's lawyers accompany
+                    <div class="tabs__content">
+                        <h3 class="tabs__content-title">We turn the idea of legal services</h3>
+                        <p class="tabs__content-text">Consolidating many years of experience and practice, the company's lawyers accompany
                             complex projects and achieve a
                             number of important decisions for the industry. Many of them form the practice of applying the law of the sea in
                             Ukraine.
                         </p>
                     </div>
-                    <div class="tab-content">
-                        <h3 class="tab-content__title">We turn the idea of legal services</h3>
-                        <p class="tab-content__text">Consolidating many years of experience and practice, the company's lawyers accompany
+                    <div class="tabs__content">
+                        <h3 class="tabs__content-title">We turn the idea of legal services</h3>
+                        <p class="tabs__content-text">Consolidating many years of experience and practice, the company's lawyers accompany
                             complex projects and achieve a
                             number of important decisions for the industry. Many of them form the practice of applying the law of the sea in
                             Ukraine.
@@ -159,20 +167,20 @@
             <section class="team">
                 <h2 class="visually-hidden">team</h2>
                 <div class="slider">
-                    <div class="slider-item">
-                        <img class="slider-item-pic" src="img/team-1.png" alt="team-1">
-                        <div class="slider-item-article">
+                    <div class="slider__item">
+                        <img class="slider__item-pic" src="img/team-1.png" alt="team-1">
+                        <div class="slider__item-article">
                             <a class="arrow-link" href="#">команда</a>
-                            <h3 class="slider-item-article__text">Ми звикли брати на себе відповідальність та завжди 
+                            <h3 class="slider__item-text">Ми звикли брати на себе відповідальність та завжди 
                                 гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h3>
-                            <p class="slider-item-article__subscr-name">Олександр Олександровський</p>
-                            <p class="slider-item-article__position">Керуючий партнер</p>
+                            <p class="slider__item-subscr-name">Олександр Олександровський</p>
+                            <p class="slider__item-position">Керуючий партнер</p>
                         </div>
                     </div>
                     <ul class="dots">
-                        <li class="dots-item active"><button class="dots-btn" type="button">1</button></li>
-                        <li class="dots-item"><button class="dots-btn" type="button">2</button></li>
-                        <li class="dots-item"><button class="dots-btn" type="button">3</button></li>
+                        <li class="dots__item active"><button class="dots__btn" type="button">1</button></li>
+                        <li class="dots__item"><button class="dots__btn" type="button">2</button></li>
+                        <li class="dots__item"><button class="dots__btn" type="button">3</button></li>
                     </ul>
                 </div>
                 
@@ -229,32 +237,32 @@
                     <h2 class="recommended__title">We have something to tell</h2>
                     <div class="recommended__pub-container">
                         <div class="recommended-pub-item">
-                            <img class="recommended-pub-item-pic" src="img/publication-1.png" alt="publication-1">
-                            <div class="recommended-pub-item-article">
-                                <a class="recommended-pub-item-article__link" href="#">Equity associate</a>
-                                <p class="recommended-pub-item-article__date">April 22</p>
-                                <p class="recommended-pub-item-article__text">
+                            <img class="recommended-pub-item__pic" src="img/publication-1.png" alt="publication-1">
+                            <div class="recommended-pub-item__article">
+                                <a class="recommended-pub-item__article-link" href="#">Equity associate</a>
+                                <p class="recommended-pub-item__article-date">April 22</p>
+                                <p class="recommended-pub-item__article-text">
                                     I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…
                                 </p>
                             </div>
                         </div>
                         <div class="recommended-pub-item">
-                            <img class="recommended-pub-item-pic" src="img/publication-2.png" alt="publication-2">
-                            <div class="recommended-pub-item-article">
-                                <a class="recommended-pub-item-article__link" href="#">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</a>
-                                <p class="recommended-pub-item-article__date">September 29</p>
-                                <p class="recommended-pub-item-article__text">
+                            <img class="recommended-pub-item__pic" src="img/publication-2.png" alt="publication-2">
+                            <div class="recommended-pub-item__article">
+                                <a class="recommended-pub-item__article-link" href="#">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</a>
+                                <p class="recommended-pub-item__article-date">September 29</p>
+                                <p class="recommended-pub-item__article-text">
                                     And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National
                                     Commission for Data Protection.
                                 </p>
                             </div>
                         </div>
                         <div class="recommended-pub-item">
-                            <img class="recommended-pub-item-pic" src="img/publication-3.png" alt="publication-3">
-                            <div class="recommended-pub-item-article">
-                                <a class="recommended-pub-item-article__link" href="#">Millennial Testament</a>
-                                <p class="recommended-pub-item-article__date">August 19</p>
-                                <p class="recommended-pub-item-article__text">
+                            <img class="recommended-pub-item__pic" src="img/publication-3.png" alt="publication-3">
+                            <div class="recommended-pub-item__article">
+                                <a class="recommended-pub-item__article-link" href="#">Millennial Testament</a>
+                                <p class="recommended-pub-item__article-date">August 19</p>
+                                <p class="recommended-pub-item__article-text">
                                     What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian
                                     generation X looks like this: an apartment in…
                                 </p>

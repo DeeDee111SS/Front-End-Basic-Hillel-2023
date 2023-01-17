@@ -5,6 +5,7 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     color: $colorActiveRegular;
+
     &::after {
         display: inline-block;
         content: "";
@@ -15,11 +16,15 @@
         background-position: center center;
         margin: 0 6px;
     }
+    
     &:hover {
         &::after {
+            transition-duration: 200ms;
+            transition-property: margin;
             margin: 0 12px;
         }
     }
+
     &.active {
         color: $colorAccent;
     }
