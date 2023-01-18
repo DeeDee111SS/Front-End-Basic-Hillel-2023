@@ -8,7 +8,8 @@
     color: $colorGreyText;
 
     &--footer {
-        color: $colorMainAlt;
+       color: $colorMainAlt;  
+       // padding: 12px 0 10px;
 
         &::after,
         &::before {
@@ -33,6 +34,7 @@
             &::after,
             &::before {
                 display: inline-block;
+                vertical-align: auto;
             }
         }
     }

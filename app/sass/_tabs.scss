@@ -15,7 +15,7 @@
             font-weight: 700;
             font-size: 20px;
             line-height: 24px;
-            color: #ffffff;
+            color: $colorBasicWhite;
             padding-bottom: 30px;
         }
 
@@ -23,7 +23,7 @@
             font-weight: 400;
             font-size: 19px;
             line-height: 30px;
-            color: #ffffff;
+            color: $colorBasicWhite;
         }
     }
 
@@ -32,7 +32,7 @@
         overflow: auto;
         -ms-owerfow-style: none;
         scrollbar-width: none;
-        border-bottom: 4px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 4px solid $colorTabsSeparator;
         padding-bottom: 30px;
 
         &::-webkit-scrollbar {
@@ -109,7 +109,7 @@
         &__switcher {
             flex-direction: column;
             align-items: flex-end;
-            border-right: 4px solid rgba(255, 255, 255, 0.3); // rgba(0, 0, 0, 0.3)
+            border-right: 4px solid $colorTabsSeparator; // or rgba(0, 0, 0, 0.3)
             padding-right: 60px;
             margin-right: 60px;
             border-bottom: none;

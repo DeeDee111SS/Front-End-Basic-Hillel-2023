@@ -28,7 +28,7 @@
         align-items: center;
 
         &--n1 {
-            background-color: #1c4280;
+            background-color: $colorClientsN1;
             .clients__logo {
                 width: 217px;
                 height: 48px;
@@ -36,7 +36,7 @@
         }
 
         &--n2 {
-            background-color: #143646;
+            background-color: $colorClientsN2;
             .clients__logo {
                 width: 199px;
                 height: 32px;
@@ -44,7 +44,7 @@
         }
 
         &--n3 {
-            background-color: #f48b30;
+            background-color: $colorClientsN3;
             .clients__logo {
                 width: 179px;
                 height: 44px;
@@ -52,7 +52,7 @@
         }
 
         &--n4 {
-            background-color: #9e4dc3;
+            background-color: $colorClientsN4;
             .clients__logo {
                 width: 180px;
                 height: 42px;
@@ -60,7 +60,7 @@
         }
 
         &--n5 {
-            background-color: #fd9339;
+            background-color: $colorClientsN5;
 
             .clients__logo {
                 width: 174px;
@@ -69,7 +69,7 @@
         }
 
         &--n6 {
-            background-color: #e2e2e4;
+            background-color: $colorClientsN6;
             .clients__logo {
                 width: 195px;
                 height: 48px;
@@ -104,7 +104,7 @@
             }
 
             &--n7 {
-                background-color: #c71c36;
+                background-color: $colorClientsN7;
                 .clients__logo {
                     width: 138px;
                     height: 61px;
@@ -112,7 +112,7 @@
             }
 
             &--n8 {
-                background-color: #dcf3f9;
+                background-color: $colorClientsN8;
                 .clients__logo {
                     width: 146px;
                     height: 76px;
@@ -120,7 +120,7 @@
             }
 
             &--n9 {
-                background-color: #eaeaea;
+                background-color: $colorClientsN9;
                 .clients__logo {
                     width: 182px;
                     height: 60px;
@@ -128,7 +128,7 @@
             }
 
             &--n10 {
-                background-color: #282240;
+                background-color: $colorClientsN10;
                 .clients__logo {
                     width: 181px;
                     height: 38px;
@@ -136,7 +136,7 @@
             }
 
             &--n11 {
-                background-color: #1d4568;
+                background-color: $colorClientsN11;
                 .clients__logo {
                     width: 189px;
                     height: 46px;
@@ -144,7 +144,7 @@
             }
 
             &--n12 {
-                background-color: #000000;
+                background-color: $colorClientsN12;
                 .clients__logo {
                     width: 152px;
                     height: 95px;

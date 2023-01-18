@@ -8,6 +8,7 @@
 
     &::after {
         display: inline-block;
+        vertical-align: auto;
         content: "";
         width: 6px;
         height: 10px;

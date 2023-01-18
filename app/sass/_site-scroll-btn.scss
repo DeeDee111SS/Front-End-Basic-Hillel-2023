@@ -2,18 +2,19 @@
     width: 42px;
     height: 42px;
     border-radius: 50%;
-    border: 2px solid rgba(255, 255, 255, 0.5);
+    border: 2px solid $colorScrollBtn;
     padding: 12px 9px;
     transition-duration: 300ms;
-    transition-property: border-color;
+    transition-property: border-color, padding; // or make animation
 
     &:hover {
-        border-color: rgba(240, 20, 90, 0.5);
+        border-color: $colorScrollBtnHover;
+        padding: 16px 9px 8px; // or make animation
 
         & path {
             transition-duration: 300ms;
             transition-property: stroke;
-            stroke: rgba(240, 20, 90, 0.5);
+            stroke: $colorScrollBtnHover;
         }
     }
 }

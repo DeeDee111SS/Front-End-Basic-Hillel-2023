@@ -9,7 +9,7 @@
         content: "";
         height: 10px;
         position: absolute;
-        background-color: #cacadb;
+        background-color: $colorFirstDivShadow1;
         bottom: -10px;
         left: 20px;
         right: 20px;
@@ -20,7 +20,7 @@
         content: "";
         height: 20px;
         position: absolute;
-        background-color: #e7e7f2;
+        background-color: $colorFirstDivShadow2;
         bottom: -20px;
         left: 40px;
         right: 40px;

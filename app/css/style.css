@@ -543,6 +543,7 @@ html {
 @media (min-width: 768px) {
   .phone--footer::after, .phone--footer::before {
     display: inline-block;
+    vertical-align: auto;
   }
 }
 
@@ -761,7 +762,7 @@ html {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  color: #ffffff;
+  color: #FFFFFF;
   padding-bottom: 30px;
 }
 
@@ -769,7 +770,7 @@ html {
   font-weight: 400;
   font-size: 19px;
   line-height: 30px;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .tabs__switcher {
@@ -909,12 +910,13 @@ html {
   padding: 12px 9px;
   -webkit-transition-duration: 300ms;
           transition-duration: 300ms;
-  -webkit-transition-property: border-color;
-  transition-property: border-color;
+  -webkit-transition-property: border-color, padding;
+  transition-property: border-color, padding;
 }
 
 .site-scroll-btn:hover {
   border-color: rgba(240, 20, 90, 0.5);
+  padding: 16px 9px 8px;
 }
 
 .site-scroll-btn:hover path {
@@ -990,6 +992,7 @@ html {
 
 .arrow-link::after {
   display: inline-block;
+  vertical-align: auto;
   content: "";
   width: 6px;
   height: 10px;
@@ -1682,7 +1685,7 @@ html {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
 }
 
 .achievements__slider-item:not(:first-child) {
