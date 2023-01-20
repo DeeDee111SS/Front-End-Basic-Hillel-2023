@@ -1222,11 +1222,6 @@ html {
   .slider__item-pic {
     height: 345px;
   }
-  .slider__item-pic-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
 }
 
 .dots {
