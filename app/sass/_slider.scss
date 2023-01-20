@@ -96,7 +96,8 @@
         &__item {            
             &-pic {
                 height: 345px; // must be changed
-                // width: 100%;
+                // max-width: 100%;
+                // height: auto;                
             }
         }
     }
