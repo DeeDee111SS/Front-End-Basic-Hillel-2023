@@ -14,8 +14,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: 30px; 
-        // padding: 26px 30px 29px;
+        padding: 26px 30px 29px;
 
         &-link {
             font-weight: 700;
@@ -31,7 +30,7 @@
         }
 
         &-date {
-            // align-self: stretch;
+            align-self: stretch;
             font-weight: 700;
             font-size: 12px;
             line-height: 15px;

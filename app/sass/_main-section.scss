@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 60px;
+    padding: 40px 0 60px;    
 
     &__h1 {
         max-width: 200px;
@@ -12,14 +12,34 @@
         line-height: 46px;
         text-align: center;
         color: $colorBasicWhite;
-        padding: 100px 0 160px; //padding: 85px 0 159px;
+        padding: 85px 0 159px;
     }
 }
 
 @media (min-width: 768px) {
     .main-section {
+        padding: 60px 0 91px;
         &__h1 {
-            padding: 210px 0 417px;
+            max-width: 560px;
+            padding: 214px 0 416px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .main-section {   
+        padding: 60px 0 89px;
+        &__h1 {            
+            padding: 188px 0 287px;
+        }
+    }
+}
+
+@media (min-width: 1401px) {
+    .main-section {
+        // padding-bottom: 89px;
+        &__h1 {
+            padding: 203px 0 305px;
         }
     }
 }

@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 30px 0;
+    padding: 31px 0;
     border-bottom: 2px solid $colorGreySeparator;
 
     &__title {
@@ -30,6 +30,12 @@
         &__pub-container {
             grid-template-columns: 1fr 1fr;
             grid-template-rows: min-content 1fr;           
+        }
+
+        &__title {
+            padding: 10px 0 30px;
+            font-size: 38px;
+            line-height: 46px;
         }
     }
 }

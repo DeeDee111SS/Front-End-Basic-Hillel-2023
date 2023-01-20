@@ -60,7 +60,7 @@
             display: flex;
             padding-left: 0;
             list-style: none;
-            margin-top: 30px;
+            margin-top: 16px;
 
             &-item {
                 .menu__link {
@@ -104,10 +104,11 @@
 
 @media (min-width: 992px) {
     .menu {
-        justify-self: end;
+        justify-self: end;        
+        margin-top: 0;
 
         &__list {
-            margin-top: 16px;
+            margin-top: 0;
         }
     }
 }

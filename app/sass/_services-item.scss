@@ -19,6 +19,7 @@
         color: $colorActiveRegular;
         transition-duration: 300ms;
         transition-property: color;
+        // max-width: 300px; --- if needed for PP
 
         &:hover {
             color: $colorAccent;

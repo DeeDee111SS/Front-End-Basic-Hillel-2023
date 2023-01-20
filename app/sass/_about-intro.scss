@@ -2,7 +2,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-bottom: 30px;
+    padding: 25px 0 30px;
+    
+    &__introduction {
+        padding-bottom: 30px;
+    }
 
     &__title {
         font-weight: 700;
@@ -21,7 +25,10 @@
         font-size: 19px;
         line-height: 30px;
         color: $colorBasicBlack;
-        padding-bottom: 30px;
+
+        &:not(:last-child) {
+            padding-bottom: 18px;
+        }
     }
 
     &__advantages {
@@ -78,7 +85,7 @@
 
 @media (min-width: 768px) {
     .about-intro {
-        padding-bottom: 60px;
+        padding: 65px 0 60px;
 
         &__title {
             font-size: 38px;
@@ -90,8 +97,13 @@
 @media (min-width: 992px) {
     .about-intro {
         display: grid;
-        grid-template-columns: 1fr 354px;
+        grid-template-columns: 1fr 387px;
         grid-template-rows: min-content min-content;
+        padding: 63px 0 32px;
+
+        &__title {
+            padding-bottom: 27px;
+        }
         
         &__introduction {
             padding-right: 30px;

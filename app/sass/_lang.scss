@@ -33,7 +33,7 @@
         transition-property: background-color;
 
         &:not(.active):hover {
-            background-color: $colorGreyText; // rgba(255, 255, 255, 0.2); or #b3b3ba-$colorGreyText
+            background-color: $colorGreyText; // or rgba(255, 255, 255, 0.2);  
         }
     }
 }

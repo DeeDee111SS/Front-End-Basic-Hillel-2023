@@ -154,7 +154,16 @@
     }
 }
 
-@media (min-width: 1401px) {
+@media (min-width: 992px) {
+    .clients {
+        &__container {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, min-content);
+        }
+    }
+}
+
+@media (min-width: 1721px) {
     .clients {
         margin-bottom: 60px;
         
@@ -167,11 +176,11 @@
                     border-radius: 12px 0 0;
                 }
 
-                &--n3 {
-                    border-radius: 0 12px 0;
+                &--n4 {
+                    border-radius: 0 12px 0 0;
                 }
 
-                &--n10 {
+                &--n9 {
                     border-radius: 0 0 0 12px;
                 }
 

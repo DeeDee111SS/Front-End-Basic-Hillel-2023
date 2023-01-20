@@ -17,7 +17,7 @@
         }
 
         &-article {
-            padding: 30px;
+            padding: 26px 30px 31px;
             display: flex;
             flex-direction: column;
             align-items: flex-start;}
@@ -31,15 +31,16 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
             text-fill-color: transparent;
-            padding: 5px 0 30px; // padding: 3px 0 30px;
+            padding: 3px 0 32px;
         }
 
         &-subscr-name {
+            max-width: 200px;
             font-weight: 700;
             font-size: 16px;
             line-height: 20px;
             color: $colorGreyText;
-            padding-bottom: 6px;
+            padding-bottom: 5px;
         }
 
         &-position {
@@ -51,6 +52,25 @@
     }
 }
 
+@media (min-width: 768px) {
+    .slider {
+        &__item {
+            &-article {
+                padding-right: 40px; // just to fit PixP
+            }
+
+            &-text {
+                font-size: 38px;
+                line-height: 46px;
+            }
+
+            &-subscr-name {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
 @media (min-width: 992px) {
     .slider {
         &__item {
@@ -58,16 +78,26 @@
             grid-template-columns: 400px 1fr;
             grid-template-rows: min-content;
 
+            &-article {
+                padding-top: 32px; 
+            }
+
             &-pic {
                 height: 100%;
                 width: 100%;
                 border-radius: 12px 0 0 12px;
+            }         
+        }
+    }
+}
+
+@media (min-width: 1401px) {
+    .slider {
+        &__item {            
+            &-pic {
+                height: 345px; // must be changed
+                // width: 100%;
             }
-               
-            &-text {
-                font-size: 38px;
-                line-height: 46px;
-            }            
         }
     }
 }
