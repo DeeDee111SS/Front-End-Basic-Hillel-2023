@@ -107,6 +107,14 @@ html {
   }
 }
 
+/* MF 
+1401
+1201
+992
+768
+576
+481
+sometimes even 376 */
 .address {
   display: none;
   font-weight: 400;
@@ -1974,6 +1982,120 @@ html {
   font-size: 16px;
   line-height: 26px;
   color: #FFFFFF;
+}
+
+.team-catalog {
+  padding: 20px 0 60px;
+}
+
+.team-catalog__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  padding-bottom: 30px;
+}
+
+.team-catalog__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 30px;
+}
+
+.team-catalog__item-pic {
+  height: 300px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px;
+}
+
+.team-catalog__item-content {
+  padding-top: 15px;
+  display: grid;
+  grid-template-columns: 1fr 40px;
+  grid-template-rows: repeat(2, -webkit-min-content);
+  grid-template-rows: repeat(2, min-content);
+}
+
+.team-catalog__item-subscr-name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #323264;
+}
+
+.team-catalog__item-position {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #b3b3ba;
+  padding-top: 5px;
+}
+
+.team-catalog__item-link {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #f5f5fa;
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  background-image: url(../img/link-arrow-lg.svg);
+  background-repeat: no-repeat;
+  background-position: 12px center;
+}
+
+.team-catalog__item-link:hover {
+  background-color: #ededf7;
+  background-image: url(../img/link-arrow-lg-accent.svg);
+}
+
+@media (min-width: 481px) {
+  .team-catalog__item-pic {
+    height: 400px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media (min-width: 768px) {
+  .team-catalog {
+    padding-top: 40px;
+  }
+  .team-catalog__title {
+    font-size: 38px;
+    line-height: 46px;
+    padding-bottom: 60px;
+  }
+  .team-catalog__list {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 60px;
+  }
+}
+
+@media (min-width: 992px) {
+  .team-catalog__title {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .team-catalog__list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1401px) {
+  .team-catalog__title {
+    max-width: 1080px;
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
