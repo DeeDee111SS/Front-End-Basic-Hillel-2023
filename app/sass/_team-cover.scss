@@ -1,11 +1,16 @@
 .team-cover {
     width: 100%;
     position: relative;
-    background-color: $colorTeamCoverBg;
+    background-color: $colorTeamCoverBg; // linear grad #b3b3c6 #e86278
     min-height: 100px;
     
     &__pic {
         display: flex;
+        // margin: 0 auto;
+
+        // &__pic-img {
+        //     margin: 0 auto;  // must be on center
+        // }
     }
     
     &__text {
@@ -54,3 +59,4 @@
         }
     }
 }
+

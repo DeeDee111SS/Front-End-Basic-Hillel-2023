@@ -5,6 +5,10 @@
     line-height: 24px;
     color: $colorMainRegular;
 
+    &--white {
+        color: $colorBasicWhite;
+    }
+
     &::before {
         content: "";
         background-image: url(../img/slash.svg);

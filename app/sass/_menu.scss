@@ -88,8 +88,17 @@
                         transition-duration: 300ms;
                         transition-property: border-bottom-color;
 
+                        &.active {
+                            color: $colorAccent;
+                            border-bottom-color: $colorAccent;
+                        }
+
                         &:hover {
                             border-bottom-color: $colorBasicWhite;
+                        }
+
+                        &:hover.active {
+                            border-bottom-color: $colorAccent;
                         }
                     }
                 }

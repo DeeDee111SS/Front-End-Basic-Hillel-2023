@@ -4,6 +4,11 @@
     background-size: 523px 600px, cover;
     position: relative;
     border-radius: 0 0 12px 12px;
+
+    &--no-logo-pic {
+        background: no-repeat center top, $colorGradientSupersoft;
+        background-size: cover;
+    }
     
     &::after {
         content: "";
