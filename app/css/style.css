@@ -1001,7 +1001,7 @@ sometimes even 376 */
     padding: 60px 0 91px;
   }
   .main-section__h1 {
-    max-width: 560px;
+    max-width: 570px;
     padding: 214px 0 416px;
   }
 }
@@ -1542,7 +1542,7 @@ sometimes even 376 */
   font-weight: 700;
   font-size: 30px;
   line-height: 37px;
-  background-color: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
