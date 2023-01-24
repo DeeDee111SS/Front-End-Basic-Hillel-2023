@@ -1,0 +1,73 @@
+.contact-form {
+    padding: 30px;
+    background-color: $colorGreyBg;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        background: $colorGradientRedText;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        padding-bottom: 30px;
+    }
+
+    &__label {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__text {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $colorGreyText;
+        padding-bottom: 15px;
+    }
+
+    &__inp {
+        padding: 15px;
+        background: $colorBasicWhite;
+        border: 1px solid $colorBasicWhite;
+        border-radius: 8px;
+        font-family: "Montserrat", "Arial", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: $colorMainAlt;
+
+        &::placeholder {
+            font-family: "Montserrat", "Arial", sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: $colorGreyText;
+        }
+
+        &--name {
+            margin-bottom: 15px;
+        }
+
+        &--message {
+            margin-bottom: 30px;
+            // resize: none;
+        }
+
+        &--tel {
+            margin-bottom: 15px;
+        }
+
+        &--email {
+
+        }
+    }
+}

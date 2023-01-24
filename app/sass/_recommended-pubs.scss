@@ -1,16 +1,15 @@
-.recommended {
+.recommended-pubs {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 31px 0;
-    border-bottom: 2px solid $colorGreySeparator;
 
     &__title {
         padding: 5px 0 30px;
         font-weight: 700;
         font-size: 30px;
         line-height: 37px;
-        background: $colorGradientRedText;
+        background-color: $colorGradientRedText;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -22,14 +21,59 @@
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, min-content);
         gap: 30px;
+
+        &--pubs {
+            grid-template-rows: repeat(6, min-content);
+        }
+    }
+
+    &__segment-button-container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 2px;
+        gap: 2px;
+        background-color: $colorGreySeparator;
+        border-radius: 12px;
+        margin: 0 auto 30px;
+    }
+
+    &__segment-button {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;        
+        color: $colorMainRegular;
+        padding: 8px 30px 10px;
+        border-radius: 10px;
+        background-color: $colorGreySeparator;
+        border: none;
+        transition-duration: 300ms;
+        transition-property: background-color;
+
+        &.active {
+            background-color: $colorBasicWhite;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:not(.active):hover {
+            background-color: $colorGreyBg;
+        }
     }
 }
 
 @media (min-width: 768px) {
-    .recommended {
+    .recommended-pubs {
         &__pub-container {
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: min-content 1fr;           
+            grid-template-rows: min-content 1fr;   
+            
+            &--pubs {
+                grid-template-rows: repeat(3, min-content);
+            }
         }
 
         &__title {
@@ -41,7 +85,7 @@
 }
 
 @media (min-width: 992px) {
-    .recommended {
+    .recommended-pubs {
         &__pub-container {
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: min-content;
@@ -50,6 +94,16 @@
                 grid-row: 1 / 2;
                 grid-column: -2 / -1;
             }
+
+            &--pubs {
+                grid-template-rows: repeat(3, min-content);
+
+                .recommended-pub-item:last-child {
+                    grid-row: 2 / 3;
+                }
+            }
+
+            
         }
     }
 }

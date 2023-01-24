@@ -36,7 +36,7 @@ $colorGradientRedTextReverse: linear-gradient(
 );
 $colorBasicWhite: #FFFFFF;
 $colorBasicBlack: #000000;
-$colorTeamCoverBg: #956173;
+$colorTeamCoverBg: linear-gradient(32deg, #b3b3c6 35.7%, #e86278 95.36%);
 $colorClientsN1: #1c4280;
 $colorClientsN2: #143646;
 $colorClientsN3: #f48b30;
@@ -58,3 +58,4 @@ $colorScrollBtn: rgba(255, 255, 255, 0.5);
 $colorScrollBtnHover: rgba(240, 20, 90, 0.5);
 $colorTabsSeparator: rgba(255, 255, 255, 0.3);
 $colorTeamTextShadow: rgba(40, 40, 86, 0.8);
+$colorBtnShadow: rgba(36, 163, 255, 0.5); 

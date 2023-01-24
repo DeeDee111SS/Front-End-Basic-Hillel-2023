@@ -1,0 +1,23 @@
+.site-mail {    
+    color: $colorActiveRegular;
+    transition-duration: 300ms;
+    transition-property: color;
+
+    &:hover {
+        color: $colorAccent;
+    }
+
+    &--footer {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    &--contact {
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 30px;
+        padding-bottom: 30px;
+        border-bottom: 4px solid $colorGreySeparator;
+    }
+}

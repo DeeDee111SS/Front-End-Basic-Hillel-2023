@@ -16,6 +16,21 @@
             display: none;
         }
     }
+
+    &--contact {
+        display: block;
+        font-size: 21px;
+        line-height: 30px;
+        color: $colorMainRegular;
+        text-align: left;
+        padding-bottom: 30px;
+        border-bottom: 4px solid $colorGreySeparator;
+
+        &::after,
+        &::before {
+            display: none;
+        }
+    }
 }
 
 @media (min-width: 768px) {
