@@ -20,7 +20,7 @@
     }
 
     &--overlined {
-        border-top: 2px solid $colorGreySeparator;
+        border-top: 2px solid $colorGreySeparator; // must be changed on (min-width: 992px) - too short line
     }
 
     

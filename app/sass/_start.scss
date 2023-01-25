@@ -80,6 +80,17 @@ html {
     }
 }
 
+@media (min-width: 1721px) {
+    .container {
+        max-width: 1600px;
+        
+        &.container--mid-content {
+            max-width: 1360px;
+        }
+    }
+}
+
+
 /* MF 
 1401
 1201
