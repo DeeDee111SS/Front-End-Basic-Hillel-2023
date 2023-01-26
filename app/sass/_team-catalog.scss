@@ -63,6 +63,8 @@
             background-image: url(../img/link-arrow-lg.svg);
             background-repeat: no-repeat;
             background-position: 12px center;
+            transition-duration: 300ms;
+            transition-property: background-color, background-image;
 
             &:hover {
                 background-color: $colorGreyBgAlt;

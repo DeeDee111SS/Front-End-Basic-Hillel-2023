@@ -2188,6 +2188,10 @@ sometimes even 376 */
   background-image: url(../img/link-arrow-lg.svg);
   background-repeat: no-repeat;
   background-position: 12px center;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+  -webkit-transition-property: background-color, background-image;
+  transition-property: background-color, background-image;
 }
 
 .team-catalog__item-link:hover {
@@ -2746,6 +2750,191 @@ sometimes even 376 */
     grid-template-rows: -webkit-min-content;
     grid-template-rows: min-content;
     gap: 60px;
+  }
+}
+
+.publication {
+  padding: 30px 0 60px;
+}
+
+.publication__header {
+  padding-bottom: 30px;
+  border-bottom: 4px solid #e6e6f0;
+}
+
+.publication__head-pic {
+  border-radius: 12px;
+  height: 300px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.publication__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  color: #323264;
+  padding-top: 30px;
+}
+
+.publication__date {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #b3b3ba;
+  padding-top: 15px;
+}
+
+.publication__main {
+  padding: 30px 0;
+}
+
+.publication__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000000;
+  padding-bottom: 15px;
+}
+
+.publication__text--pb0 {
+  padding-bottom: 0;
+}
+
+.publication__insertion {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  padding: 30px 0;
+}
+
+.publication__subtitle {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #46466e;
+  padding-bottom: 15px;
+}
+
+.publication__list {
+  padding-bottom: 30px;
+  list-style-type: none;
+  counter-reset: item;
+  padding-left: 15px;
+}
+
+.publication__list-item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.publication__list-item:not(:last-child) {
+  padding-bottom: 15px;
+}
+
+.publication__list-item:before {
+  content: counter(item) ".";
+  counter-increment: item;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #f0145a;
+  padding-right: 10px;
+}
+
+.publication__list-item:first-child:before {
+  padding-left: 3px;
+}
+
+.publication__ill-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 0;
+}
+
+.publication__illustration {
+  width: 315px;
+  height: auto;
+}
+
+.publication__ill-subscript {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #b3b3ba;
+  padding-top: 15px;
+}
+
+.publication__footer {
+  padding-top: 30px;
+  border-top: 4px solid #e6e6f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.publication__socials-link {
+  width: 42px;
+  height: 42px;
+  background-color: #f5f5fa;
+  border-radius: 12px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+}
+
+.publication__socials-link--fb {
+  background-image: url(../img/facebook-icon.svg);
+}
+
+.publication__socials-link--teleg {
+  background-image: url(../img/telegram-icon.svg);
+}
+
+.publication__socials-link--lin {
+  background-image: url(../img/linkedin-icon.svg);
+}
+
+.publication__socials-link:hover {
+  background-color: #ededf7;
+}
+
+@media (min-width: 768px) {
+  .publication {
+    padding: 60px 0 60px;
+  }
+  .publication__head-pic {
+    height: 500px;
+  }
+  .publication__insertion {
+    font-size: 38px;
+    line-height: 46px;
+  }
+  .publication__illustration {
+    width: 640px;
   }
 }
 
