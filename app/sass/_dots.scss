@@ -12,21 +12,21 @@
         bottom: -48px;
     }
     
-    &__item {
+    li { // li -> &__item (just by limitations of slick-slider)
         padding: 0 7px;
         
-        &.active .dots__btn {
+        &.slick-active button { // button -> .dots__btn; slick-active -> active (just by limitations of slick-slider)
             background-color: $colorActiveRegular;
         }
 
-        &:not(.active):hover .dots__btn {
+        &:not(.slick-active):hover button { // button -> .dots__btn; slick-active -> active (just by limitations of slick-slider)
             transition-duration: 300ms;
             transition-property: background-color;
             background-color: $colorDotsBtnHoverOpac;
         }
     }
 
-    &__btn {
+    button { // button -> &__btn
         cursor: pointer;
         border: none;
         font-size: 0;

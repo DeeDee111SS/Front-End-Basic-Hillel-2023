@@ -20,13 +20,30 @@
     
     &:hover {
         &::after {
-            transition-duration: 200ms;
-            transition-property: margin;
+            // transition-duration: 200ms;
+            // transition-property: margin;
+            animation-name: arrow-link;
+            animation-duration: 1000ms;
+            animation-iteration-count: infinite;
             margin: 0 12px;
         }
     }
 
     &.active {
         color: $colorAccent;
+    }
+}
+
+@keyframes arrow-link {
+    0% {
+        margin: 0 6px;
+    }
+
+    50% {
+        margin: 0 12px;
+    }
+
+    100% {
+        margin: 0 6px;
     }
 }
