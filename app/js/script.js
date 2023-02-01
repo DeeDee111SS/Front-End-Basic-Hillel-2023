@@ -33,12 +33,12 @@ $('.js-slider-achievements').slick({
  
 
 (function () {
-    const burger = document.querySelector('.menu-btn')
+    var burger = document.querySelector('.menu-btn') // const must be changed to var for gulp build to minify js
     if (!burger) return
-    const menu = document.querySelector('.menu__mobile-list')
-    const headerOverlay = document.querySelector('.header__overlay')
+    var menu = document.querySelector('.menu__mobile-list')
+    var headerOverlay = document.querySelector('.header__overlay')
     if (!headerOverlay) return
-    const body = document.querySelector('.body')
+    var body = document.querySelector('.body')
 
     burger.addEventListener('click', function () {
         menu.classList.toggle('show')
@@ -56,9 +56,9 @@ $('.js-slider-achievements').slick({
 })();
 
     (function () {
-        const tabsBtns = document.querySelectorAll('.tabs__switcher-button')
+        var tabsBtns = document.querySelectorAll('.tabs__switcher-button')
         if (!tabsBtns) return
-        const tabsContents = document.querySelectorAll('.tabs__content')
+        var tabsContents = document.querySelectorAll('.tabs__content')
 
         tabsBtns.forEach(function (button, index) {
             button.addEventListener('click', function () {
@@ -77,11 +77,11 @@ $('.js-slider-achievements').slick({
     })();
 
 (function () {
-    const openModal = document.querySelector('.main-button--service')
+    var openModal = document.querySelector('.main-button--service')
     if (!openModal) return
-    const modal = document.querySelector('.modal')
-    const closeModal = document.querySelector('.contact-form__close-button')
-    const body = document.querySelector('.body') // with  body.classList.add('stop-scroll')  window is jumping with scrollbar
+    var modal = document.querySelector('.modal')
+    var closeModal = document.querySelector('.contact-form__close-button')
+    var body = document.querySelector('.body') // with  body.classList.add('stop-scroll')  window is jumping with scrollbar
 
     openModal.addEventListener('click', function() {
         modal.classList.add('active')
@@ -95,11 +95,11 @@ $('.js-slider-achievements').slick({
 })();
 
 (function () {
-    const artBtn = document.querySelector('.recommended-pubs__segment-button--articles')
+    var artBtn = document.querySelector('.recommended-pubs__segment-button--articles')
     if (!artBtn) return
-    const newsBtn = document.querySelector('.recommended-pubs__segment-button--news')
-    const artContainer = document.querySelector('.recommended-pubs__pub-container--pubs')
-    const newsContainer = document.querySelector('.recommended-pubs__pub-container--news')
+    var newsBtn = document.querySelector('.recommended-pubs__segment-button--news')
+    var artContainer = document.querySelector('.recommended-pubs__pub-container--pubs')
+    var newsContainer = document.querySelector('.recommended-pubs__pub-container--news')
 
     artBtn.addEventListener('click', function() {
         artBtn.classList.add('active')
@@ -115,6 +115,7 @@ $('.js-slider-achievements').slick({
         artContainer.classList.remove('active')
     })
 })();
+
 
 
 
