@@ -24,6 +24,20 @@
 
         &--pubs {
             grid-template-rows: repeat(6, min-content);
+            display: none;
+
+            &.active {
+                display: grid;
+            }
+        }
+
+        &--news {
+            grid-template-rows: repeat(6, min-content);
+            display: none;
+        
+            &.active {
+                display: grid;
+            }
         }
     }
 

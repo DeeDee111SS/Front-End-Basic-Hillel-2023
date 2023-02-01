@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preload" href="fonts/montserrat-v25-latin_cyrillic-regular.woff2" as="font" type="font/woff"
+    <link rel="preload" href="../fonts/montserrat-v25-latin_cyrillic-regular.woff2" as="font" type="font/woff"
         crossorigin="anonymous">
-    <link rel="preload" href="fonts/montserrat-v25-latin_cyrillic-700.woff2" as="font" type="font/woff"
+    <link rel="preload" href="../fonts/montserrat-v25-latin_cyrillic-700.woff2" as="font" type="font/woff"
         crossorigin="anonymous">
-    <link rel="preload" href="fonts/montserrat-v25-latin_cyrillic-italic.woff2" as="font" type="font/woff"
+    <link rel="preload" href="../fonts/montserrat-v25-latin_cyrillic-italic.woff2" as="font" type="font/woff"
         crossorigin="anonymous">
-    <link rel="preload" href="fonts/montserrat-v25-latin_cyrillic-700italic.woff2" as="font" type="font/woff"
+    <link rel="preload" href="../fonts/montserrat-v25-latin_cyrillic-700italic.woff2" as="font" type="font/woff"
         crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>HLegal / services</title>
@@ -30,9 +30,9 @@
                         <li><a class="lang__link lang__link--white active" href="#"
                                 aria-label="language switch button">en</a></li>
                     </ul>
-                    <div class="address">Kyiv, Mechnikova str., 14/1</div>
+                    <div class="address address--white">Kyiv, Mechnikova str., 14/1</div>
                     <a class="phone phone--white" href="tel:+380800211927">0800 211 927</a>
-                    <a class="fb" href="#" aria-label="facebook link">
+                    <a class="fb fb--white" href="#" aria-label="facebook link">
                         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
@@ -46,6 +46,7 @@
                     </a>
                     <div class="breadcrumbs breadcrumbs--white">services</div>
                 </div>
+                <div class="header__overlay"></div>
                 <nav class="menu">
                     <button class="menu-btn menu-btn--white" type="button" aria-label="open/close menu button"></button>
                     <ul class="menu__mobile-list">
@@ -118,13 +119,13 @@
         <div class="recommended-bg-container">
             <div class="container container--pb-adapt">
                 <section class="recommended-pubs">
-                    <a class="arrow-link" href="pages/publications.html">publications</a>
+                    <a class="arrow-link" href="../pages/publications.html">publications</a>
                     <h2 class="recommended-pubs__title">We have something to tell</h2>
                     <div class="recommended-pubs__pub-container">
                         <div class="recommended-pub-item">
                             <img class="recommended-pub-item__pic" src="../img/publication-1.png" alt="publication-1">
                             <div class="recommended-pub-item__article">
-                                <a class="recommended-pub-item__article-link" href="#">Equity associate</a>
+                                <a class="recommended-pub-item__article-link" href="../pages/publication-entry-1.html">Equity associate</a>
                                 <p class="recommended-pub-item__article-date">April 22</p>
                                 <p class="recommended-pub-item__article-text">
                                     I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my
@@ -135,7 +136,7 @@
                         <div class="recommended-pub-item">
                             <img class="recommended-pub-item__pic" src="../img/publication-2.png" alt="publication-2">
                             <div class="recommended-pub-item__article">
-                                <a class="recommended-pub-item__article-link" href="#">Penalty for the Good Corporation: what
+                                <a class="recommended-pub-item__article-link" href="../pages/publication-entry-2.html">Penalty for the Good Corporation: what
                                     will happen to Google and others for violating the GDPR</a>
                                 <p class="recommended-pub-item__article-date">September 29</p>
                                 <p class="recommended-pub-item__article-text">
@@ -148,7 +149,7 @@
                         <div class="recommended-pub-item">
                             <img class="recommended-pub-item__pic" src="../img/publication-3.png" alt="publication-3">
                             <div class="recommended-pub-item__article">
-                                <a class="recommended-pub-item__article-link" href="#">Millennial Testament</a>
+                                <a class="recommended-pub-item__article-link" href="../pages/publication-entry-3.html">Millennial Testament</a>
                                 <p class="recommended-pub-item__article-date">August 19</p>
                                 <p class="recommended-pub-item__article-text">
                                     What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical
@@ -186,6 +187,29 @@
             </footer>
         </div>
     </div>
+    <div class="modal">
+        <form class="contact-form contact-form--modal" action="https://fom.in.ua/echo" method="get"> <!-- action, method - for example-->
+            <div class="contact-form__header">
+                <h2 class="contact-form__title">We would like to help you</h2>
+                <button class="contact-form__close-button" type="button" aria-label="close contact window button"></button>
+            </div>
+            <label class="contact-form__label">
+                <input class="contact-form__inp contact-form__inp--name" type="text" name="name" required
+                    placeholder="Name">
+                <textarea class="contact-form__inp contact-form__inp--message" rows="4" placeholder="Message"></textarea>
+            </label>
+            <p class="contact-form__text">How to answer you?</p>
+            <label class="contact-form__label">
+                <input class="contact-form__inp contact-form__inp--tel" type="tel" name="phone" required
+                    placeholder="Phone">
+                <input class="contact-form__inp contact-form__inp--email" type="email" name="email" required
+                    placeholder="Email">
+            </label>
+            <button class="main-button main-button--contact" type="submit" value="">Send message</button> <!-- must be (value="") (?) -->
+        </form>
+    </div>
+
+    <script src="../js/all.js"></script>
 </body>
 
 </html>

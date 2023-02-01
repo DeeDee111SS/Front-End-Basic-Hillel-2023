@@ -13,7 +13,7 @@
     <link rel="preload" href="../fonts/montserrat-v25-latin_cyrillic-700italic.woff2" as="font" type="font/woff"
         crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <!-- <link rel="stylesheet" href="../css/slick.css"> -->
+    <link rel="stylesheet" href="../css/slick.css">
     <title>HLegal / about us</title>
 </head>
 <body class="body">
@@ -41,6 +41,7 @@
                 </a>
                 <div class="breadcrumbs">about us</div>
             </div>
+            <div class="header__overlay header__overlay--white-page"></div>
             <nav class="menu">
                 <button class="menu-btn" type="button" aria-label="open/close menu button"></button>
                 <ul class="menu__mobile-list menu__mobile-list--white">
@@ -63,9 +64,9 @@
     <main>
         <div class="container container--pb-adapt container--mid-content">
             <section class="about-intro">
-                <h2 class="visually-hidden">intro</h2>
+                <!-- <h1 class="visually-hidden">intro</h1> --- or this option -->
                 <article class="about-intro__introduction">
-                    <h3 class="about-intro__title">We turn over the idea of legal services</h3>
+                    <h1 class="about-intro__title">We turn over the idea of legal services</h1> <!-- or h2 -->
                     <p class="about-intro__text">Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve the
                     adoption of a number of decisions that are important for the industry. Many people form the practice of applying the law
                     of the sea in Ukraine.
@@ -74,7 +75,7 @@
                     Ukrainian and international companies, and the recognition of professional ratings.</p>
                 </article>
                 <article class="about-intro__advantages">
-                    <h3 class="visually-hidden">advantages</h3>
+                    <h2 class="visually-hidden">advantages</h2>
                     <p class="about-intro__digits about-intro__digits--n1">10+</p>
                     <p class="about-intro__definition">years of relevant experience</p>
                     <p class="about-intro__digits about-intro__digits--n2">30+</p>
@@ -119,34 +120,47 @@
                 <div class="achievements__container">
                     <h2 class="achievements__title">achievements</h2>
                     <div class="achievements__slider js-slider-achievements">
-                        <div class="achievements__slider-item">
-                            <img class="achievements__slider-pic achievements__slider-pic--n1" src="../img/achievment-1.png" alt="achievement-image">
+                        <div class="achievements__slick-container"> <!-- for slick -->
+                            <div class="achievements__slider-item">
+                                <img class="achievements__slider-pic achievements__slider-pic--n1" src="../img/achievment-1.png" alt="achievement-image">
+                            </div>
                         </div>
-                        <div class="achievements__slider-item">
-                            <img class="achievements__slider-pic achievements__slider-pic--n2" src="../img/achievment-2.png" alt="achievement-image">
+                        <div class="achievements__slick-container"> <!-- for slick -->
+                            <div class="achievements__slider-item">
+                                <img class="achievements__slider-pic achievements__slider-pic--n2" src="../img/achievment-2.png" alt="achievement-image">
+                            </div>
                         </div>
-                        <div class="achievements__slider-item">
-                            <img class="achievements__slider-pic achievements__slider-pic--n3" src="../img/achievment-3.png" alt="achievement-image">
+                        <div class="achievements__slick-container"> <!-- for slick -->
+                            <div class="achievements__slider-item">
+                                <img class="achievements__slider-pic achievements__slider-pic--n3" src="../img/achievment-3.png" alt="achievement-image">
+                            </div>
                         </div>
-                        <div class="achievements__slider-item">
-                            <img class="achievements__slider-pic achievements__slider-pic--n4" src="../img/achievment-4.png" alt="achievement-image">
+                        <div class="achievements__slick-container"> <!-- for slick -->
+                            <div class="achievements__slider-item">
+                                <img class="achievements__slider-pic achievements__slider-pic--n4" src="../img/achievment-4.png" alt="achievement-image">
+                            </div>
                         </div>
-                        <!-- <div class="achievements__slider-item">
-                            <img class="achievements__slider-pic achievements__slider-pic--n3" src="../img/achievment-example-1.png"
-                                alt="achievement-image">
+                        <div class="achievements__slick-container">
+                            <div class="achievements__slider-item">
+                                <img class="achievements__slider-pic achievements__slider-pic--n3" src="../img/achievment-example-1.png"
+                                    alt="achievement-image">
+                            </div>
                         </div>
-                        <div class="achievements__slider-item">
-                            <img class="achievements__slider-pic achievements__slider-pic--n3" src="../img/achievment-example-2.png"
-                                alt="achievement-image">
-                        </div> -->
-                        <ul class="dots dots--about">
+                        <div class="achievements__slick-container"> <!-- for slick -->
+                            <div class="achievements__slider-item">
+                                <img class="achievements__slider-pic achievements__slider-pic--n3" src="../img/achievment-example-2.png"
+                                    alt="achievement-image">
+                            </div>
+                        </div>
+                        <!-- <ul class="dots dots--about"> 
                             <li class="dots__item active"><button class="dots__btn" type="button" aria-label="slider switch dot">1</button></li>
                             <li class="dots__item"><button class="dots__btn" type="button" aria-label="slider switch dot">2</button></li>
                             <li class="dots__item"><button class="dots__btn" type="button" aria-label="slider switch dot">3</button></li>
                             <li class="dots__item"><button class="dots__btn" type="button" aria-label="slider switch dot">4</button></li>
                             <li class="dots__item"><button class="dots__btn" type="button" aria-label="slider switch dot">5</button></li>
                             <li class="dots__item"><button class="dots__btn" type="button" aria-label="slider switch dot">6</button></li>
-                        </ul>
+                        </ul> -->
+                        <!-- ^ for just layout ^ -->
                     </div>
                 </div>
             </div>
@@ -175,6 +189,6 @@
         </div>
     </div>
 
-    <!-- <script src="../js/all.js"></script> -->
+    <script src="../js/all.js"></script>
 </body>
 </html>

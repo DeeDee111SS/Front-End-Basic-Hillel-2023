@@ -31,6 +31,10 @@
             display: none;
         }
     }
+
+    &--white {
+        color: $colorBasicWhite;
+    }
 }
 
 @media (min-width: 768px) {

@@ -26,6 +26,10 @@
             background-color: $colorGreyText;
         }
     }
+
+    &.show {
+        background-image: url(../img/close-btn.svg);
+    }
 }
 
 @media (min-width: 768px) {

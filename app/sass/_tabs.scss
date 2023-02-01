@@ -5,6 +5,7 @@
     &__content {
         display: none;
         padding: 30px 0;
+        animation: tabsRight .5s ease;
 
         &.active {
             display: flex;
@@ -24,6 +25,12 @@
             font-size: 19px;
             line-height: 30px;
             color: $colorBasicWhite;
+        }
+
+        &-container {
+            display: flex;
+            align-items: flex-start;
+            height: 364px;
         }
     }
 
@@ -49,7 +56,7 @@
             background-color: transparent;
             padding: 0;
             transition-duration: 300ms;
-            transition-property: color;
+            transition-property: background, color;
 
             &.active {
                 background: $colorGradientRedTextReverse;
@@ -69,6 +76,27 @@
 
             &:not(:last-child) {
                 margin-right: 30px;
+            }
+        }
+    }
+}
+
+@keyframes tabsRight {
+    0% {
+        transform: translateX(10%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@media (min-width: 481px) {
+    .tabs {
+        &__content {
+            &-container {
+                height: 310px;
             }
         }
     }
@@ -109,6 +137,10 @@
                 font-size: 30px;
                 line-height: 37px;
             }
+
+            &-container {
+                height: 250px;
+            }
         }
 
         &__switcher {
@@ -117,7 +149,7 @@
             border-right: 4px solid $colorTabsSeparator; // or rgba(0, 0, 0, 0.3)            
             margin-right: 60px;
             border-bottom: none;            
-            padding: 15px 61px 5px 36px;
+            padding: 15px 61px 52px 36px;
 
             &-button {
                 &:not(:last-child) {
@@ -133,10 +165,15 @@
     .tabs {
         &__content {
             padding: 43px 0;
+
+            &-container {
+                display: block;
+                height: auto;
+            }
         }
 
         &__switcher {            
-            padding: 15px 61px 14px 36px;
+            padding: 15px 61px 25px 36px;
         }
     }
 }

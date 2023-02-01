@@ -58,6 +58,18 @@ a {
 
 html {
     scroll-behavior: smooth;
+    // overflow-y: scroll; // scrollbar is always visible
+    // or --  html {
+    //     margin-left: calc(100vw - 100%);
+    //     margin-right: 0;
+    // }
+}
+
+
+
+.stop-scroll {
+    overflow: hidden;
+    height: 100%;
 }
 
 @media (min-width: 768px) {

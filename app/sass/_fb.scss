@@ -22,8 +22,14 @@
         }
     }
 
-    &--contact:hover + .contact-container__fb-text {
+    &--contact:hover + .contact-container__fb-text { // treatment must be changed
         color: $colorAccent;
+    }
+
+    &--white {
+        & path {
+            fill: $colorBasicWhite;
+        }
     }
 }
 
